@@ -1,0 +1,12 @@
+CRITICAL - 2024-01-17 03:14:25 --> Access denied for user 'geremy'@'localhost' (using password: YES)
+in FCPATH\connection.php on line 10.
+ 1 FCPATH\connection.php(10): mysqli_connect('localhost', 'geremy', Object(SensitiveParameterValue))
+ 2 APPPATH\Views\login.php(3): connection()
+ 3 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CRUD_CI4\\ci4\\app\\Views\\login.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('login', [], true)
+ 6 APPPATH\Controllers\Home.php(37): view('login')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->login()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
